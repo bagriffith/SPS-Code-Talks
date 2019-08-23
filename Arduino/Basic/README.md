@@ -13,7 +13,7 @@ Arduinos are comonly used to log or respond to some sensor value. In this demo, 
 
 A Photoresistor has a resisitance that decreases when the intensity of light on it increases. It is wired up as shown in the setup diagram so that the voltage connected to A0 increases with brighter light.
 
-IMAGE HERE
+![Diagram for Analog Read Demo](https://github.com/bagriffith/code_talks/blob/master/Arduino/Basic/Analog%20Read%20Diagram.png)
 
 In the init(), which is run once at startup, the difference between `int` and `byte` and rollovers are explored. This is important to be aware of before writing even basic arduino scripts because it is easy to accidentally rollover an `int` in a lab setting.
 
@@ -53,4 +53,4 @@ Serial.println(light_level;)
 
 It is commonly needed to count a number of digital pulses with an arduino. An example that prints to the Serial connection when 1000 pulses are counted is presented as the second example.
 
-IMAGE HERE
+![Diagram for Counter Demo](https://github.com/bagriffith/code_talks/blob/master/Arduino/Basic/Counter%20Diagram.png)
