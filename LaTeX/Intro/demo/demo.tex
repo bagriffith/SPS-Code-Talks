@@ -1,0 +1,81 @@
+\documentclass{article}
+\usepackage{amsmath}
+\usepackage[american]{circuitikz}
+\usepackage{fancyhdr}
+\usepackage{graphicx}
+\usepackage{listings}
+
+\pagestyle{fancy}
+\fancyhead{}
+\fancyfoot{}
+\fancyhead[L]{Brady Griffith}
+\fancyhead[C]{\LaTeX \ Example}
+\fancyhead[R]{\thepage}
+
+\title{\LaTeX \ Example}
+\author{Brady Griffith}
+\date{October 03, 2018}
+
+\begin{document}
+
+\maketitle
+\newpage
+
+\section*{Question 1}
+\subsection*{Part A}
+The velocity of the particle is given by $v(t) = at$.
+
+To find the position, velocity is integrated with respect to time.
+
+$$ x(t) = \int_{t_0}^{t_1} v(t) dt = \frac{a}{2} t^2 + x_0 $$
+
+\subsection*{Part B}
+The positions for 1s and 2s are given. \\
+\begin{tabular}{ l | l }
+  t (s) & x (m) \\ \hline
+  1 & $\frac{1}{2}$ \\
+  2 & 2 \\
+\end{tabular}
+
+\section*{Question 2}
+The vector field $\vec{v} = \left< y, -x \right>$ is shown.
+
+\includegraphics[width=2in]{example}
+
+\section*{Question 3}
+The following equations
+$$ 2x + 3y $$
+$$ 4x + 5y $$
+are given by the following matrix
+\[
+ \begin{bmatrix}
+   2 & 3 \\
+   4 & 5
+ \end{bmatrix}
+\]
+
+\section*{Question 4}
+\begin{align*}
+  a &= 2x + 2y \\
+  &= 2(x + y)
+\end{align*}
+  
+\section*{Question 5}
+\begin{circuitikz} \draw
+  (0,0) to[short, o-] (-6,0)
+        to[american voltage source,l=$V$] (-6,4) -- (-4,4)
+        to[short, -o] (0,4)
+        (-2,0) to[R, l=$R_1$] (-2,4)
+        ;
+\end{circuitikz}
+
+\section*{Question 6}
+\begin{lstlisting}[language=FORTRAN, caption=FORTRAN example]
+  PROGRAM EXAMPLE
+    INTEGER :: N = 3 
+    N = N + 1
+    PRINT *, N
+  END PROGRAM EXAMPLE
+\end{lstlisting}
+
+\end{document}
