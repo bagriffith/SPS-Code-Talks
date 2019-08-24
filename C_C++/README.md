@@ -132,4 +132,4 @@ Vector Vector::operator+(const Vector right)
 
 ## More Abstract Classes
 
-This is a lot like the (2nd Python Code Talk)[https://github.com/bagriffith/SPS-Code-Talks/tree/master/Python/2.%20Classes%20and%20Object%20Oriented%20Programming] where I create abstract objects to simulate the elements in the simulation.
+This is a lot like the [2nd Python Code Talk](https://github.com/bagriffith/SPS-Code-Talks/tree/master/Python/2.%20Classes%20and%20Object%20Oriented%20Programming) where I create abstract objects to simulate the elements in the simulation.
